@@ -217,7 +217,7 @@
            
             
         }
-        .part1 button {
+         button {
             width: 50px;
             height: 50px;
             border-radius: 12px;
@@ -245,9 +245,9 @@
         #destxt { 
                   font-family:arial;
                   font-size:25px;
-                  color:rgb(0, 0, 0);
+                  color:rgb(255, 255, 255);
                   text-align:center;
-                  background-color: hsl(0, 0%, 80%);
+                  background-color: hsl(0, 0%, 0%);
                   border-radius: 20px;
 
         }
@@ -272,16 +272,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="onstart.html" style="text-decoration: underline;">back</a></li>
-        <li><a href="#colors">colors</a></li>
-        <li><a href="#fonts">fonts</a></li>
-        <li><a href="#display">display</a></li>
-        <li><a href="#part4">backgrounds</a></li>
-        <li><a href="#part5">decorations</a></li>
-        <li><a href="#part6">borders</a></li>
-        <li><a href="#part7">class</a></li>
-        <li><a href="#part8">icons</a></li>
-        <li><a href="#part9">shapes</a></li>
-        <li><a href="#part10">more</a></li>
+       <li><a style="color: white;animation: slide 1s;" href="tel:+21625739896">call me </a></li>
+       <li> <a style="color: white;animation: slide 1s;" href="mailto:daretodevlop@gmail.com">mail me</a></li>
+    
       </ul>
     </div>
   </div>
@@ -294,8 +287,11 @@
   }
 </style>
 <div class="jumbotron text-center" style="animation: oo 1s;" >
+
+  
   <h1 style="animation: slide 2s;">welcome !</h1> 
   <p style="animation: slide 1s;">LLC</p> 
+
   <form>
 
     </div>
@@ -306,8 +302,14 @@
     <div class="col-sm-8" >
         <h2 id="hj">the colors on CSS :</h2>
         <h3>the colors are the source of life on every web page, at first your styles are your tools . make sure that you know how to use them ! </h2>
+          <h4>click to change color !</h4>
+          <button style="background-color: red;" id="btn1" onclick="cs1()"></button>
+          <button style="background-color: #0000ff;" id="btn2" onclick="sc2()"></button>
+          <button style="background-color: white;" id="btn3" onclick="cs3()"></button>
+          <button style="background-color: green;" id="btn4" onclick="cs4()"></button>
+          <button style="background-color: aqua;" id="btn5" onclick="cs5()"></button>
         <h2>code :</h3>
-        <div class="part1">
+        <div class="part1" style="height: 200px;">
           <div class="codesec">
             .text {
                 <p id="code1">
@@ -316,11 +318,6 @@
             }
           </div>
           <p style="margin-bottom: 60px;"></p>
-          <button style="background-color: red;" id="btn1" onclick="cs1()"></button>
-          <button style="background-color: #0000ff;" id="btn2" onclick="sc2()"></button>
-          <button style="background-color: white;" id="btn3" onclick="cs3()"></button>
-          <button style="background-color: green;" id="btn4" onclick="cs4()"></button>
-          <button style="background-color: aqua;" id="btn5" onclick="cs5()"></button>
         </div>
         <script>
 
@@ -385,8 +382,9 @@
            <p> .designedText  { <br>
                   font-family:arial; <br>
                   font-size:25px;<br>
-                  color:black;<br>
-                  <strong>text-align:center;</strong><br>
+                  color:white;<br>
+                 text-align:center;<br>
+                 background-color:black;<br>
             }
            </p>
         </div>
@@ -733,7 +731,7 @@
 
 </div>
 <h3>margin-left :</h3>
-<div class="part1" style="display: grid;">
+<div class="part1" style="display: grid; height: 350px;">
   <button style="background-color: #8739F9;width: 100px; margin-left: 80px; color: white;">80px</button>
   <button style="background-color: #8739F9;width: 100px; margin-left: 30px; color: white;">30px</button>
   <button style="background-color: #8739F9;width: 100px; margin-left: 70px; color: white;">70px</button>
@@ -742,7 +740,7 @@
 
 </div>
 <h3>margin-top :</h3>
-<div class="part1" style="display: flex;">
+<div class="part1" style="display: flex; height: 150px;">
   <button style="background-color: #8739F9;width: 80px; margin-top: 10px !important; color: white; margin-left: 0px;">10px</button> <br>
   <button style="background-color: #8739F9;width: 80px; margin-top: 30px !important; color: white; margin-left: 20px;">30px</button> <br>
   <button style="background-color: #8739F9;width: 80px; margin-top: 70px !important; color: white; margin-left: 15px;">70px</button> <br>
@@ -755,10 +753,10 @@
 <p>
 </p>
 <h4>now, you will use the padding on the container (not the item itself !) to fix the place of the item</h4>
-<div class="part1" id="cont" style="padding-right: 0px;border: 1px solid rgb(127, 244, 44);background-color: #0dd35f;">
-  <div class="item" style="width: 130px;height: 100px;background-color: rgb(14, 95, 95); border-radius: 20px;color: white; font-size: 20px;text-align: center;">put me on the center !!</div>
+<div class="part1" id="cont" style="padding-right: 0px;border: 1px solid rgb(33, 78, 149);background-color: #21589b;">
+  <div class="item" style="width: 130px;height: 100px;background-color: #f22637; border-radius: 20px;color: white; font-size: 20px;text-align: center;">put me on the center !!</div>
 </div>
-<p id="score" style="color: black; font-size: 18px;font-family: sans-serif;margin-left: px;">score = <span id="top">0</span>px top and <span id="left">0</span>px left</p>
+<p id="score" style="color: black; font-size: 18px;font-family: sans-serif;margin-left: px;">Effects = <span id="top">0</span>px top and <span id="left">0</span>px left</p>
 <script>
  function adjustPadding() {
     const item = document.getElementById('cont');
@@ -794,11 +792,6 @@ function newgame() {
     if (pd1 === 100 && pd2 === 80) {
     alert("You win!");
     }
-
-     
-      
-      
-
 </script>
 <div class="part1" style="height: 180px;margin-top: -10px;background-color: #077386;">
   <button style="background-color: #f22637;width: 120px;color: white;" onclick="adjustPadding1()">top</button>
