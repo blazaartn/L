@@ -331,7 +331,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#myPage">llc1.0</a>
+        <a class="navbar-brand" href="#myPage" style="animation: slide .8s;">llc1.0</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -341,13 +341,22 @@
       </div>
     </div>
   </nav>
-  
-  <div class="jumbotron text-center">
-    <h1>lets learn Css</h1> 
-    <p style="text-decoration: underline;" onclick="goinfo()">by :EL-yahyaoui Nour !</p> 
+  <style>
+    @keyframes oo {
+      from {opacity: .1;}
+      to{opacity: 1;}
+      
+    }
+  </style>
+  <div class="jumbotron text-center" style="animation: oo 2s;">
+    <h1 style="animation: slide 2s , oo 1s;">lets learn Css</h1> 
+    <p style="text-decoration: underline;animation: slide 1s, oo 1s;" onclick="goinfo()" >by :EL-yahyaoui Nour !</p> 
   </div>
   <div id="about" class="container-fluid">
-  <div class="row">
+    
+    <center><button style="border: solid 1px transparent;border-radius: 20px; color: rgb(252, 246, 246);font-size: 20px;width: 200px;border-collapse: initial; background-color: #188acc;margin-top: -150px !important; " onclick="gocolors()" >start with LLC  </button>
+    </center><hr>
+    <div class="row">
     <div class="col-sm-8">
       <h2>about company : </h2><br>
       <h4>LLC, the best css guide for beginners, meduim and even advanced developer . here you can finde the magic ! we start with you from the beginning to get started on css design for HTML </h4><br>
@@ -428,7 +437,6 @@
           window.location.href="onbuild.html"
         }
       </script>
-      <button style="border: none;border-radius: 0px; color: black;font-size: 28px;width: 200px;border-collapse: initial; background: transparent; text-decoration: underline;" onclick="gocolors()" >start with LLC  </button>
     <hr>
     <h1>under the construction !</h1>
     </div>
