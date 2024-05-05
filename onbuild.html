@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="cjs.js"></script>
   <style>
   body {
     font: 400 15px Lato, sans-serif;
@@ -268,7 +267,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">LLC1.0</a>
+      <a class="navbar-brand" href="#myPage" style="animation: slide .8s;">LLC1.0</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -287,10 +286,16 @@
     </div>
   </div>
 </nav>
-
-<div class="jumbotron text-center">
-  <h1>welcome !</h1> 
-  <p>LLC</p> 
+<style>
+  @keyframes oo {
+    from {opacity: .1;}
+    to{opacity: 1;}
+    
+  }
+</style>
+<div class="jumbotron text-center" style="animation: oo 1s;" >
+  <h1 style="animation: slide 2s;">welcome !</h1> 
+  <p style="animation: slide 1s;">LLC</p> 
   <form>
 
     </div>
@@ -720,7 +725,7 @@
      <span style="text-decoration: underline;"> margin:50px;</span> <br>
        /*from all sides */ <br>
      <span style="text-decoration: underline;">margin-left:50px;</span>  <br> /*from the left */ <br>
-     <span style="text-decoration: underline;"> margin-rightt:50px;</span> <br> /*from the right */ <br>
+     <span style="text-decoration: underline;"> margin-right:50px;</span> <br> /*from the right */ <br>
      <span style="text-decoration: underline;"> margin-top:50px; </span><br> /*from the top */ <br>
      <span style="text-decoration: underline;"> margin-bottom:50px;</span> <br> /*from the bottom */ <br>
     }
@@ -738,11 +743,78 @@
 </div>
 <h3>margin-top :</h3>
 <div class="part1" style="display: flex;">
-  <button style="background-color: #8739F9;width: 80px; margin-top: 10px !important; color: white; margin-left: 0px;">80px</button> <br>
+  <button style="background-color: #8739F9;width: 80px; margin-top: 10px !important; color: white; margin-left: 0px;">10px</button> <br>
   <button style="background-color: #8739F9;width: 80px; margin-top: 30px !important; color: white; margin-left: 20px;">30px</button> <br>
   <button style="background-color: #8739F9;width: 80px; margin-top: 70px !important; color: white; margin-left: 15px;">70px</button> <br>
 </div>
 <h3>and we know how to use the rest !</h3>
+<hr>
+<h1>padding :</h1>
+<h4>Padding is the space between an element’s content (such as text or images) and its border. Think of it as the cushioning that keeps your content comfortable and neatly organized within its container. Whether you’re designing a sleek portfolio or a robust e-commerce site, mastering padding is essential.</h4>
+<h2>lets use padding !</h2>
+<p>
+</p>
+<h4>now, you will use the padding on the container (not the item itself !) to fix the place of the item</h4>
+<div class="part1" id="cont" style="padding-right: 0px;border: 1px solid rgb(127, 244, 44);background-color: #0dd35f;">
+  <div class="item" style="width: 130px;height: 100px;background-color: rgb(14, 95, 95); border-radius: 20px;color: white; font-size: 20px;text-align: center;">put me on the center !!</div>
+</div>
+<p id="score" style="color: black; font-size: 18px;font-family: sans-serif;margin-left: px;">score = <span id="top">0</span>px top and <span id="left">0</span>px left</p>
+<script>
+ function adjustPadding() {
+    const item = document.getElementById('cont');
+    const currentPadding = parseInt(getComputedStyle(item).paddingLeft, 10);
+    const newPadding = currentPadding + 10;
+    if (newPadding <= 130) {
+        item.style.paddingLeft = `${newPadding}px`;
+        document.getElementById("left").textContent = `${newPadding}`;
+        document.getElementById("pa1").textContent= `${newPadding}`;
+    }
+}
+
+function adjustPadding1() {
+    const item = document.getElementById('cont');
+    const currentPadding = parseInt(getComputedStyle(item).paddingTop, 10);
+    const newPadding = currentPadding + 10;
+    if (newPadding <= 170) {
+        item.style.paddingTop = `${newPadding}px`;
+        document.getElementById("top").textContent = `${newPadding}`;
+        document.getElementById("pa2").textContent= `${newPadding}`;
+    }
+}
+function newgame() {
+        const item = document.getElementById('cont');
+        item.style.padding="30px";
+        document.getElementById("top").textContent="0";document.getElementById("left").textContent="0";
+        document.getElementById("pa1").textContent="30";document.getElementById("pa2").textContent= `30`;
+        
+      }
+      const pd1 = parseInt(document.getElementById("top").value, 10);
+      const pd2 = parseInt(document.getElementById("left").value, 10);
+
+    if (pd1 === 100 && pd2 === 80) {
+    alert("You win!");
+    }
+
+     
+      
+      
+
+</script>
+<div class="part1" style="height: 180px;margin-top: -10px;background-color: #077386;">
+  <button style="background-color: #f22637;width: 120px;color: white;" onclick="adjustPadding1()">top</button>
+  <button style="background-color: #2333ca;width: 120px;color: white; margin-top: 20px;" onclick="adjustPadding()">left</button>
+  <button style="background-color: #631391;width: 120px;color: white; margin-top: 20px;margin-left: 60px;" onclick="newgame()">play again !</button>
+
+</div>
+<h3>code :</h3>
+<div class="part1" style="height: 200px;">
+  <p>
+  .containerOfItem { <br>
+   <span style="margin-left: 30px;"> padding-top:</span><span id="pa1">30</span>px; <br>
+   <span style="margin-left: 30px;"> padding-top:</span><span id="pa2">30</span>px; <br>
+  }
+</div>
+<h2>thanks for using, it still under the construction. Nour need to study and sleep hhhh !</h2>
 </div>
 
   <footer class="footer" >
