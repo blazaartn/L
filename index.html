@@ -1,206 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    button {
-        width: 150px;
-        height: 45px;
-        border: none;
-        border-radius: 12px !important;
-        margin: 10px;
-        margin-top: 10px !important;
-        color: white;
-        font-size: 20px;
-        font-weight: 700;
-    }
-</style>
 <head>
-    <meta charset="utf-8">
-    <title>LLC</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="C:\Users\user\Desktop\project\script.js"></script>
+    <style>
+        h1 {
+            font-size: 35px;font-weight: 750;font-family: cursive;letter-spacing: 4px;
+           
+        }
+        .container {
+            width: 450px;
+    height: 200px;
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    border-radius:30px;
+    border: solid 1px rgb(255, 255, 255);
+    margin: 50px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 750;
+        }
+        .c {
+            width: 800px;text-align: center;
+        }
+        button {
+            color: white;
+            transition: .4s all;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+        .button1:hover {
+            color: white;
+            transform: none;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        button:active {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+        .button1 {
+            transform: translate(399.99px,78px);font-size: 15px;width: 120px;height: 35px;border: .1px solid transparent ;border-radius: 15px;color: white;font-weight: 250;background:hsl(0, 0%, 0%);cursor: copy;
+        }
+        @media  screen and (max-width:700px) {
+            .container  {
+                width: 300px;
+            }
+            .button1 {
+                transform: translate(210%,210%);
+            }
+            .button1:hover {
+                transform: translate(210%,210%);
+            }
+            .c {
+                width: 80%;
+                text-align: center;
+                padding-left: 5%;
+            }
+            header {
+                background-color: #000000;
+                width: 100%;
+                height: 15vh;
+                color: wheat;
+                font-weight: 750;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                border-radius: 12px;
+                padding-top: 10px;
+            }
+            
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
+    <header>
+        <h1>colors part !</h1>
+        <p style="color: orangered;">try everything yourself and copy code ! </p>
+    </header>
+    <h1 id="text" >change me !</h1>
 
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0">LLC</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="" class="nav-item nav-link">About</a>
-                        <a href="" class="nav-item nav-link">Service</a>
-                        <a href="" class="nav-item nav-link">Project</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="" class="dropdown-item">Our Team</a>
-                                <a href="" class="dropdown-item">Testimonial</a>
-                                <a href="" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
-                </div>
-            </nav>
-
-            <div class="container-xxl bg-primary hero-header">
-                <div class="container px-lg-5">
-                    <div class="row g-5 align-items-end">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated slideInDown">get started with the css ! </h1>
-                            <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
-                            <a href="" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Get Started</a>
-                            <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container px-lg-5" style="text-align: center;">
-            <h1>what do you want to do today ?</h1>
-            <hr>
-            <button onclick="window.location.href='width.html' "  style="background-color: rgb(72, 180, 180);"> width</button>
-            <button onclick="window.location.href='height.html' "  style="background-color: rgb(195, 51, 214);"> height</button>
-            <button onclick="window.location.href='color.html' "  style="background-color: rgb(197, 214, 42);"> color</button>
-            <button onclick="window.location.href='background.html' " style="background-color: rgb(56, 99, 219);">background</button>
-            <button onclick="window.location.href='border.html' "  style="background-color: rgb(38, 189, 25);">border</button>
-            <button onclick="window.location.href='margin.html' "  style="background-color: rgb(186, 49, 199);">margin</button> <br>
-            <button onclick="window.location.href='padding.html' "  style="background-color: rgb(76, 10, 180);">padding</button>
-            <button onclick="window.location.href='display.html' "  style="background-color: rgb(13, 102, 65);">display</button>
-            <button onclick="window.location.href='text.html' "  style="background-color: rgb(211, 191, 11);">text-align</button> <br>
-            <button onclick="window.location.href='family.html' "  style="background-color: rgb(148, 77, 11);">font-family</button>
-            <button onclick="window.location.href='weight.html' "  style="background-color: rgb(29, 119, 119);">font-weght</button>
-            <button onclick="window.location.href='style.html' "  style="background-color: rgb(199, 39, 18);">font-style</button>
-            <button onclick="window.location.href='size.html' "  style="background-color: rgb(228, 64, 220);">font-size</button>
-            <button onclick="window.location.href='html.html' "  style="background-color: rgb(7, 71, 71);">HTML ></button>
-<hr>
-        </div>
-        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>sbiba gassrine tunisia</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+216 25739896</p>
-                        <p><i class="fa fa-envelope me-3"></i>daretodevlop@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Gallery<span></span></p>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">LLC</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							 
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+<div class="c" >
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(255, 0, 0);" onclick="change('red')">red</button>
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(11, 0, 110);" onclick="change('blue')">blue</button>
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(14, 71, 12);" onclick="change('green')">green</button>
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(247, 232, 31);" onclick="change('yellow')">yellow</button>
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(0, 0, 0);" onclick="change('black')">black</button>
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: solid 1px ;border-radius: 15px;color: rgb(0, 0, 0);font-weight: 750;background-color: rgb(243, 243, 243);" onclick="change('white')">white</button>
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: aqua;" onclick="change('aqua')">aqua</button>
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(201, 99, 16);" onclick="change('orange')">oranged</button>
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(168, 24, 224);" onclick="change('blueviolet')">blueviolet</button>
+    <button style="margin-top: 8px;font-size: 20px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(233, 86, 209);" onclick="change('pink')">pink</button> <br>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(19, 129, 28);" onclick="change('rgb(19, 129, 28)')">rgb(19, 129, 28)</button>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(15, 74, 151);" onclick="change('rgb(15, 74, 151)')">rgb(15, 74, 151)</button>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(86, 8, 105);" onclick="change('rgb(86, 8,105)')">rgb(86, 8,105)</button>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(126, 36, 8);" onclick="change('rgb(126, 36, 8)')">rgb(126, 36, 8)</button>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(20, 172, 33);" onclick="change('rgb(20, 172, 33)')">rgb(20, 172, 33)</button>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(139, 116, 10);" onclick="change('rgb(139, 116, 10)')">rgb(139, 116, 10)</button>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(243, 113, 113);" onclick="change('rgb(243, 113, 113)')">rgb(243, 113, 113)</button>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(109, 8, 46);" onclick="change('rgb(109, 8, 46)')">rgb(109, 8, 46)</button>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(99, 224, 224);" onclick="change('rgb(99, 224, 224)')">rgb(99, 224, 224)</button>
+    <button style="margin-top: 8px;font-size: 15px;width: 150px;height: 45px;border: none;border-radius: 15px;color: white;font-weight: 750;background-color: rgb(3, 6, 49);" onclick="change('rgb(3, 6, 49)')">rgb(3, 6, 49)</button>
+</div>
+  <br> 
+  <h1  style="font-size: 35px;font-weight: 750;font-family: cursive;letter-spacing: 4px;">and you can copy the code :</h1>
+  <button class="button1" onclick="copie('.container')">Copy Code</button>
+<div class="container">
+        <p class="cd" style="margin-top: 0px;">
+        h1 { <br>
+            <span style="margin-left: 50px;">color :</span><span id="code">black</span>;<br>
+        }
+    </p>
+</div>
 </body>
-
 </html>
