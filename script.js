@@ -8,5 +8,12 @@ function copie(txt) {
     const container = document.querySelector(txt);
     const code = container.textContent;
     navigator.clipboard.writeText(code);
-    alert("Code copied successfully!");
+
+    const btn = document.getElementById('g');
+    btn.style.color = "rgb(20, 172, 33)";
+
+    // Remove the color after 2 seconds
+    setTimeout(() => {
+        btn.style.color = ""; // Reset to default color (remove the style)
+    }, 2000); // 2000 milliseconds = 2 seconds
 }

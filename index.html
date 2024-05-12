@@ -7,7 +7,7 @@
     <script src="script.js"></script>
     <style>
         h1 {
-            font-size: 35px;font-weight: 12000000;font-family: Arial, Helvetica, sans-serif;letter-spacing: 4px;
+            font-size: 35px;font-weight: 12000000;font-family: Arial, Helvetica, sans-serif;letter-spacing: 4px;transition: all .4s;
             
            
         }
@@ -23,6 +23,7 @@
     font-size: 18px;
     font-weight: 750;
         }
+       
         .c {
             width: 800px;text-align: center;
         }
@@ -48,7 +49,9 @@
         }
         @media  screen and (max-width:700px) {
             .container  {
-                width: 200px;
+                width: 290px;
+                height: 100px;
+                margin-left: 10px;
             }
             .button1 {
                 transform: translate(125%,210%);
@@ -72,6 +75,15 @@
                 border-radius: 12px;
                 padding-top: 10px;
             }
+            @keyframes gt {
+            0% {
+                color: rgb(97, 207, 97);
+
+            }
+            90% {color: rgb(68, 210, 99);}
+            100%{color: white;}
+            
+        }
             
         }
     </style>
@@ -79,7 +91,7 @@
 <body>
     <header>
         <h1>colors part !</h1>
-        <p style="color: orangered;">try everything yourself and copy code ! </p>
+        <p style="color:rgb(20, 172, 33);">try everything yourself and copy code ! </p>
     </header>
     <h1 id="text" >change me !</h1>
 
@@ -107,7 +119,7 @@
 </div>
   <br> 
   <h1  style="font-size: 35px;font-weight: 750;font-family: Arial, Helvetica, sans-serif;letter-spacing: 4px;">and you can copy the code :</h1>
-  <button class="button1" onclick="copie('.container')">Copy Code</button>
+  <button class="button1" onclick="copie('.container');" id="g">Copy Code</button>
 <div class="container">
         <p class="cd" style="margin-top: 0px;">
         h1 { <br>
